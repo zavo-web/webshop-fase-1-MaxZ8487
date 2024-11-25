@@ -8,23 +8,63 @@
   </head>
   <body>
     <header>
+      <section id="home">
       <div class="container_navbar">
         <div id="logo">
-          <img src="fotos/logo.png" alt="logo lego" width="50" />
+          <a href="#home">
+            <img src="fotos/logo.png" alt="LEGO" id="logo"/>
+          </a>
         </div>
         <nav id="nav">
+          <div class="search">
+            <input type="text" placeholder="Search..." />
+          </div>
           <a href="#products">Products</a>
           <a href="#categories">Categories</a>
           <a href="#about">About</a>
           <a href="#help" class="split">Help</a>
-          <a href="pages/shopCart.html">
+          <a href="pages/shopCart.html" onclick="document.getElementById()">
             <img src="fotos/shopCart.png" alt="Shopping Cart" width="50">
           </a>
-          <div class="search">
-            <input type="text" placeholder="Search..." />
-          </div>
+        <!-- Button to open the modal login form -->
+        <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+        <!-- The Modal -->
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'"
+          class="close" title="Close Modal">&times;</span>
+
+          <!-- Modal Content -->
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="container-loginPage">
+              <br><br>
+              <img src="../fotos/logo.png" alt="LEGO" id="logo">
+              <br>
+              <br>
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+              <br>
+              <br>
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              <br><br>
+              <button class="button-71" type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+              <br>
+              <br>
+            </div>
+
+            <div class="container-cancelOrForgot">
+              <button class="button-71" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <a href="#">Forgot password?</a>
+            </div>
+          </form>
+        </div>
         </nav>
       </div>
+    </section>
     </header>
     <div class="main">
       <section id="products">
