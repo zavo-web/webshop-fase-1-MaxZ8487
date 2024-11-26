@@ -10,14 +10,13 @@
     <header>
       <section id="home">
       <div class="container_navbar">
-        <div id="logo">
           <a href="#home">
             <img src="fotos/logo.png" alt="LEGO" id="logo"/>
           </a>
-        </div>
+        <!--Navigation bar-->
         <nav id="nav">
           <div class="search">
-            <input type="text" placeholder="Search..." />
+            <input type="text" placeholder="Search..." class="search-content" />
           </div>
           <a href="#products">Products</a>
           <a href="#categories">Categories</a>
@@ -26,6 +25,7 @@
           <a href="pages/shopCart.html" onclick="document.getElementById()">
             <img src="fotos/shopCart.png" alt="Shopping Cart" width="50">
           </a>
+          
         <!-- Button to open the modal login form -->
         <button onclick="document.getElementById('id01').style.display='block'">Login</button>
 
@@ -42,11 +42,11 @@
               <br>
               <br>
               <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" required>
+              <input type="text" placeholder="Enter Username" id="uname" required>
               <br>
               <br>
               <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
+              <input type="password" placeholder="Enter Password" id="psw" required>
               <br><br>
               <button class="button-71" type="submit">Login</button>
               <label>
@@ -57,7 +57,7 @@
             </div>
 
             <div class="container-cancelOrForgot">
-              <button class="button-71" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <button class="button-71" type="button" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
               <a href="#">Forgot password?</a>
             </div>
           </form>
@@ -70,51 +70,40 @@
       <section id="products">
         <h3>Products</h3>
         <div class="container_products">
-          <div id="product1">
-            <img src="fotos/iron_spider_man.jpg" alt="Iron Spider Man" width="100" />
+          <div class="product">
+            <img src="fotos/iron_spider_man.jpg" alt="Iron Spider Man" width="200" />
             <p>Iron Spider Man</p>
             <p>€9.99</p>
-            <div class="star_rating">
-              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs
-              /font-awesome/4.7.0/css/font-awesome.min.css">
-
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-
-            </div>
           </div>
-          <div id="product2">
-            <img src="fotos/santa_sleigh.jpg" alt="Santa's Sleigh" width="100" />
+          <div class="product">
+            <img src="fotos/santa_sleigh.jpg" alt="Santa's Sleigh" width="200" />
             <p>Santa's Sleigh</p>
             <p>€39.99</p>
           </div>
-          <div id="product3">
+          <div class="product">
             <img
               src="fotos/botanical_garden.jpg"
               alt="Botanical Garden"
-              width="100"
+              width="200"
             />
             <p>The Botanical Garden</p>
             <p>€329.99</p>
           </div>
         </div>
       </section>
-      <aside>
+      <aside></aside>
       <section id="categories">
         <h3>Categories</h3>
-          <a href="#small sets">Small sets</a>
-          <a href="medium sets">Medium sets</a>
-          <a href="large sets">Large sets</a>
-        </aside>
+          <a href="#small-sets">Small sets</a>
+          <a href="medium-sets">Medium sets</a>
+          <a href="large-sets">Large sets</a>
       </section>
     </div>
     <footer>
       <section id="about">
         <h3>About</h3>
         <p>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
           Founded in 1932 in Billund, Denmark, LEGO began as a small carpenter’s
           workshop by Ole Kirk Christiansen, crafting wooden toys. In 1958, LEGO
           introduced the iconic interlocking bricks, sparking a creative
@@ -127,7 +116,7 @@
         <h3>Help</h3>
         <h5>How to contact us</h5>
         <p>
-          Email: support@lego.com <br />Phone: +1 (800) 835-4386 <br />Hours:
+          Email: <a href="">support@lego.com</a> <br />Phone: <a href="">+1 (800) 835-4386</a> <br />Hours:
           Mon-Fri, 8:00 AM - 8:00 PM (ET)
         </p>
       </section>
