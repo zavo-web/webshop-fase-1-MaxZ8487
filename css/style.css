@@ -1,5 +1,6 @@
 body{
   margin: 0px;
+  font-family: "Ubuntu", sans-serif;
 }
 header{
 position: sticky;
@@ -7,30 +8,29 @@ top: 0;
 }
 /* navigation bar*/
 .navbar{
-  background-color: #FFD700;
+  background-color: black;
   align-content: center;
 }
 
 .navbar a{
   text-decoration: none;
-  color: black;
-  font-family: "Ubuntu", sans-serif;
+  color: white;
   padding-left: 20px;
   padding-right: 20px;
   padding: 10px;
 }
 
 .navbar a:hover{
-  background-color: #fde55e;
-  transform: scale(1.2, 1.2);
+  background-color: #575757;
+  transform: scale(1.05, 1.05);
 }
 .navContainer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 2px;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 .search {
   align-content: center;
@@ -44,18 +44,15 @@ width: 10vw;
   width: 50px;
 }
 
-.container_products {
-display: flex;
-flex-wrap: wrap;
-padding: 5px;
-justify-content: space-around;
+.card{
+  padding: 1vw;
+  border: solid black 1px;
+  border-radius: 20px;
+  text-align: center;
 }
-.product{
-border: 1px solid #ddd;
-border-radius: 4px;
-width: 21vw;
-}
-
-#products img{
-  width: 20vw;
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1vw;
+  padding: 2vw;
 }
