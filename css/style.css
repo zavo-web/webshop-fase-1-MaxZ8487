@@ -1,4 +1,5 @@
 /* General */
+/* General */
 *{
   padding-left: 20px;
   padding-right: 20px;
@@ -9,6 +10,7 @@ header{
 position: sticky;
 top: 0;
 }
+/*Navigation bar*/
 /*Navigation bar*/
 .container_navbar {
 width: 100%;
