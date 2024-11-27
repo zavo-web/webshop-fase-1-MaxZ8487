@@ -70,7 +70,7 @@ width: 10vw;
 }
 .grid-container-shoes{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 20vw);
   gap: 5vw;
   padding-bottom: 2vw;
 }
@@ -92,7 +92,7 @@ width: 10vw;
 
 .grid-container-jerseys{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 20vw);
   gap: 5vw;
   padding-bottom: 2vw;
 }
@@ -100,7 +100,7 @@ width: 10vw;
 /*balls*/
 .grid-container-balls{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 20vw);
   gap: 5vw;
   padding-bottom: 2vw;
 }
