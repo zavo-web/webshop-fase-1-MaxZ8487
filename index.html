@@ -3,100 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />#
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <title>Lego webshop</title>
   </head>
   <body>
     <header>
+      <!--Navigation bar-->
       <section id="home">
-        <div class="container_navbar">
-          <a href="#home">
-            <img src="fotos/logo.png" alt="LEGO" id="logo" />
-          </a>
-          <!--Navigation bar-->
-          <nav id="nav">
-            <div class="search">
-              <input
-                type="text"
-                placeholder="Search..."
-                class="search-content"
-              />
-            </div>
-            <a href="#products">Products</a>
-            <a href="#categories">Categories</a>
-            <a href="#about">About</a>
-            <a href="#help" class="split">Help</a>
-            <a href="pages/shopCart.html" onclick="document.getElementById()">
-              <img src="fotos/shopCart.png" alt="Shopping Cart" width="50" />
+        <nav class="navbar">
+          <div class="navContainer">
+            <a href="#home">
+              <img src="fotos/logo.png" alt="LEGO" class="logo" />
             </a>
 
-            <!-- Button to open the modal login form -->
-            <button
-              onclick="document.getElementById('id01').style.display='block'"
-            >
-              Login
-            </button>
-
-            <!-- The Modal -->
-            <div id="id01" class="modal">
-              <span
-                onclick="document.getElementById('id01').style.display='none'"
-                class="close"
-                title="Close Modal"
-                >&times;</span
-              >
-
-              <!-- Modal Content -->
-              <form class="modal-content animate" action="/action_page.php">
-                <div class="container-loginPage">
-                  <br /><br />
-                  <img src="../fotos/logo.png" alt="LEGO" id="logo" />
-                  <br />
-                  <br />
-                  <label for="uname"><b>Username</b></label>
-                  <input
-                    type="text"
-                    placeholder="Enter Username"
-                    id="uname"
-                    required
-                  />
-                  <br />
-                  <br />
-                  <label for="psw"><b>Password</b></label>
-                  <input
-                    type="password"
-                    placeholder="Enter Password"
-                    id="psw"
-                    required
-                  />
-                  <br /><br />
-                  <button class="button-71" type="submit">Login</button>
-                  <label>
-                    <input type="checkbox" checked="checked" name="remember" />
-                    Remember me
-                  </label>
-                  <br />
-                  <br />
-                </div>
-
-                <div class="container-cancelOrForgot">
-                  <button
-                    class="button-71"
-                    type="button"
-                    onclick="document.getElementById('id01').style.display='none'"
-                  >
-                    Cancel
-                  </button>
-                  <a href="#">Forgot password?</a>
-                </div>
-              </form>
-            </div>
+                  <div class="search">
+                    <input type="text" placeholder="Search here" class="search-content"/>
+                  </div>
+                  <a href="#products">Products</a>
+                  <a href="#categories">Categories</a>
+                  <a href="#about">About</a>
+                  <a href="#help" class="split">Help</a>
+                  <a href="pages/shopCart.html">Shopping Cart</a>
+              </div>
           </nav>
-        </div>
+
       </section>
     </header>
     <div class="main">
-      <section class="products">
+      <section id="products">
         <h3>Products</h3>
         <div class="container_products">
           <div class="product">

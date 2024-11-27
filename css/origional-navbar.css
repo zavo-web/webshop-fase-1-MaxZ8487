@@ -1,0 +1,41 @@
+.container_navbar {
+    align-content: center;
+    padding: 5px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFD700;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav a {
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .search {
+    align-content: center;
+  }
+  .search-content{
+  height: 40%;
+  }
+  
+  #shopCart{
+    width: 50;
+  }
+  
+  /* images */
+  .logo{
+    width: 50px;
+  }
+  
