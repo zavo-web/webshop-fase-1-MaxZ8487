@@ -1,3 +1,4 @@
+/**/
 body{
   margin: 0px;
   font-family: "Ubuntu", sans-serif;
@@ -5,6 +6,7 @@ body{
 header{
 position: sticky;
 top: 0;
+z-index: 1;
 }
 /* navigation bar*/
 .navbar{
@@ -35,6 +37,10 @@ top: 0;
 .search {
   align-content: center;
 }
+.search :placeholder-shown{
+  font-weight: bold;
+  font-size: medium;
+}
 .search-content{
 height: 25px;
 width: 10vw;
@@ -44,15 +50,57 @@ width: 10vw;
   width: 50px;
 }
 
+/*Products*/
+#products{
+  padding: 2vw;
+}
+/*shoes*/
 .card{
   padding: 1vw;
   border: solid black 1px;
   border-radius: 20px;
   text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.grid-container{
+.card:hover{
+  transform: scale(1.025, 1.025);
+}
+.card img{
+  width: 100%;
+}
+.grid-container-shoes{
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1vw;
-  padding: 2vw;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5vw;
+  padding-bottom: 2vw;
+}
+
+.addCart{
+  color: white;
+  background-color: black;
+  border: solid black;
+  border-radius: 10px;
+}
+.addCart:hover{
+  transform: scale(1.05, 1.05);
+  background-color: rgb(66, 66, 66);
+  border: solid rgb(66, 66, 66);
+  cursor: pointer;
+}
+
+/*Jerseys*/
+
+.grid-container-jerseys{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5vw;
+  padding-bottom: 2vw;
+}
+
+/*balls*/
+.grid-container-balls{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5vw;
+  padding-bottom: 2vw;
 }
