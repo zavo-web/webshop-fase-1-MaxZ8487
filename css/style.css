@@ -23,7 +23,7 @@ header {
 }
 
 .navbar a:hover {
-  background-color: #575757;
+  background-color: hsl(0, 0%, 11%);
   transform: scale(1.05, 1.05);
 }
 .navContainer {
@@ -50,11 +50,43 @@ header {
   width: 50px;
 }
 
+main{
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+
+.container-sidebar{
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  background-color: hsl(0, 0%, 19%);
+  height: 100%;
+  color: white;
+  text-align: center;
+  padding: 1vw;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+}
+.categorieLink a{
+  text-decoration: none;
+  color: white;
+}
+.categorieLink{  
+  background-color: hsl(0, 0%, 25%);
+  border: solid black;
+  height: 3.5em; 
+  align-content: center;
+}
+.categorieLink:hover{  
+  background-color: hsl(0, 0%, 30% );
+  transform: scale(1.05, 1.05);
+  cursor: pointer;
+}
+
 /*Products*/
 #products {
   padding: 2vw;
 }
-/*shoes*/
 .card {
   padding: 1vw;
   border: solid black 1px;
@@ -65,7 +97,7 @@ header {
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   max-width: 300px;
-  width: 33.3%;
+  width: 25%;
 }
 .card:hover {
   transform: scale(1.025, 1.025);
@@ -74,23 +106,28 @@ header {
 .card img {
   width: 100%;
 }
-.flex-wrapper-shoes{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-bottom: 2vw;
-}
 
 .addCart {
   color: white;
   background-color: black;
   border: solid black;
   border-radius: 10px;
+  width: 10vw;
+  height: 2vw;
 }
 .addCart:hover {
   transform: scale(1.05, 1.05);
   background-color: rgb(66, 66, 66);
   border: solid rgb(66, 66, 66);
+  cursor: pointer;
+}
+
+/*shoes*/
+.flex-wrapper-shoes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 2vw;
 }
 
 /*Jerseys*/
