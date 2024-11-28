@@ -61,6 +61,7 @@ width: 10vw;
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 25%;
 }
 .card:hover{
   transform: scale(1.025, 1.025);
@@ -68,10 +69,10 @@ width: 10vw;
 .card img{
   width: 100%;
 }
-.grid-container-shoes{
-  display: grid;
-  grid-template-columns: repeat(4, 20vw);
-  gap: 5vw;
+.flex-wrapper-shoes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   padding-bottom: 2vw;
 }
 
@@ -90,17 +91,17 @@ width: 10vw;
 
 /*Jerseys*/
 
-.grid-container-jerseys{
-  display: grid;
-  grid-template-columns: repeat(4, 20vw);
-  gap: 5vw;
+.flex-wrapper-jerseys{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   padding-bottom: 2vw;
 }
 
 /*balls*/
-.grid-container-balls{
-  display: grid;
-  grid-template-columns: repeat(4, 20vw);
-  gap: 5vw;
+.flex-wrapper-balls{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   padding-bottom: 2vw;
 }
