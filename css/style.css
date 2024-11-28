@@ -1,20 +1,20 @@
 /**/
-body{
+body {
   margin: 0px;
   font-family: "Ubuntu", sans-serif;
 }
-header{
-position: sticky;
-top: 0;
-z-index: 1;
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 /* navigation bar*/
-.navbar{
+.navbar {
   background-color: black;
   align-content: center;
 }
 
-.navbar a{
+.navbar a {
   text-decoration: none;
   color: white;
   padding-left: 20px;
@@ -22,11 +22,11 @@ z-index: 1;
   padding: 10px;
 }
 
-.navbar a:hover{
+.navbar a:hover {
   background-color: #575757;
   transform: scale(1.05, 1.05);
 }
-.navContainer{
+.navContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,36 +37,39 @@ z-index: 1;
 .search {
   align-content: center;
 }
-.search :placeholder-shown{
+.search :placeholder-shown {
   font-weight: bold;
   font-size: medium;
 }
-.search-content{
-height: 25px;
-width: 10vw;
+.search-content {
+  height: 25px;
+  width: 10vw;
 }
 /* images */
-.logo{
+.logo {
   width: 50px;
 }
 
 /*Products*/
-#products{
+#products {
   padding: 2vw;
 }
 /*shoes*/
-.card{
+.card {
   padding: 1vw;
   border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 25%;
 }
-.card:hover{
+.card:hover {
   transform: scale(1.025, 1.025);
 }
-.card img{
+.card img {
   width: 100%;
 }
 .flex-wrapper-shoes{
@@ -76,13 +79,13 @@ width: 10vw;
   padding-bottom: 2vw;
 }
 
-.addCart{
+.addCart {
   color: white;
   background-color: black;
   border: solid black;
   border-radius: 10px;
 }
-.addCart:hover{
+.addCart:hover {
   transform: scale(1.05, 1.05);
   background-color: rgb(66, 66, 66);
   border: solid rgb(66, 66, 66);
