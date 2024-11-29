@@ -2,6 +2,7 @@
 body {
   margin: 0px;
   font-family: "Ubuntu", sans-serif;
+  background-color: hsl(0, 0%, 89%);
 }
 header {
   position: sticky;
@@ -50,29 +51,32 @@ header {
   width: 50px;
 }
 
-main{
+.container-grid{
   display: grid;
   grid-template-columns: 20% 1fr;
 }
 
-.container-sidebar{
+
+
+.flexbox-sidebar{
   display: flex;
   flex-direction: column;
   gap: 1vw;
-  background-color: hsl(0, 0%, 19%);
+  background-color: hsl(0, 0%, 63%);
   height: 100%;
-  color: white;
+  color: black;
   text-align: center;
   padding: 1vw;
   padding-left: 1.5vw;
   padding-right: 1.5vw;
+  border-right: solid black 2px;
 }
 .categorieLink a{
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .categorieLink{  
-  background-color: hsl(0, 0%, 25%);
+  background-color: hsl(0, 0%, 55%);
   border: solid black;
   height: 3.5em; 
   align-content: center;
@@ -83,6 +87,11 @@ main{
   cursor: pointer;
 }
 
+
+.main-content{
+  text-align: center;
+  padding: 2rem;
+}
 /*Products*/
 #products {
   padding: 2vw;
@@ -90,6 +99,7 @@ main{
 .card {
   padding: 1vw;
   border: solid black 1px;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -145,4 +155,22 @@ main{
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-bottom: 2vw;
+}
+
+
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  position: absolute;
+  width: 94.8%;
+  background: hsl(0, 0%, 63%);
+  color: black;
+  padding: 2rem;  
+  border-top: solid black 2px;
+  text-align: center;
+}
+
+footer p{
+  font-size: small;
 }
