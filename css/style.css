@@ -76,14 +76,15 @@ header {
   color: black;
 }
 .link-button{
-  background-color: hsl(0, 0%, 55%);
+  background-color: hsl(0, 0%, 70%);
   border: solid black;
+  border-radius: 10px;
   height: 3.5em; 
   align-content: center;
   width: 100%;
 }
 .link-button:hover{  
-  background-color: hsl(0, 0%, 60% );
+  background-color: hsl(0, 0%, 75%);
   transform: scale(1.05, 1.05);
   cursor: pointer;
 }
@@ -92,6 +93,10 @@ header {
 .main-content{
   text-align: center;
   padding: 2rem;
+}
+#about{
+  line-height: 2rem;
+  font-size: 2ch;
 }
 /*Products*/
 #products {
@@ -105,14 +110,13 @@ header {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 20px;
-  text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   max-width: 300px;
   width: 25%;
   margin: 1rem;
 }
 .card:hover {
-  transform: scale(1.025, 1.025);
+  transform: scale(1.0125, 1.0125);
   cursor: pointer;
 }
 .card img {
@@ -171,8 +175,11 @@ header {
   flex: 2 1 auto;
   gap: 2rem;
   align-items: center;
-  align-content: center;
+  text-align: center;
   padding: .5rem;
+}
+.flexbox-product:not(:last-child){
+  border-bottom: solid black 2px;
 }
 .flexbox-product input{
   width: 50%;
