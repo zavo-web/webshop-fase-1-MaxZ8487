@@ -1,0 +1,235 @@
+/**/
+body {
+  margin: 0px;
+  font-family: "Ubuntu", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+/* navigation bar*/
+.navbar {
+  background-color: black;
+  align-content: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  background-color: hsl(0, 0%, 15%);
+  transform: scale(1.05, 1.05);
+}
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.search {
+  align-content: center;
+}
+.search :placeholder-shown {
+  font-weight: bold;
+  font-size: medium;
+}
+.search-content {
+  height: 25px;
+  width: 10vw;
+}
+/* images */
+.logo {
+  width: 50px;
+}
+
+.container-grid{
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+
+
+
+.flexbox-sidebar{
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 63%);
+  height: 100%;
+  color: black;
+  text-align: center;
+  border-right: solid black 2px;
+}
+.categorieLink a{
+  text-decoration: none;
+  color: black;
+}
+.categorieLink:last-child{
+  border-bottom: solid black 1px;
+}
+.link-button{
+  background-color: hsl(0, 0%, 70%);
+  border-top: solid black 1px;
+  height: 3.5em; 
+  align-content: center;
+  width: 100%;
+}
+.link-button:hover{  
+  background-color: hsl(0, 0%, 75%);
+  cursor: pointer;
+}
+
+
+.main-content{
+  text-align: center;
+  padding: 2rem;
+}
+#about{
+  line-height: 2rem;
+  font-size: 2ch;
+}
+#about img{
+  border-radius: 15px;
+}
+/*Products*/
+#products {
+  padding: 2vw;
+}
+.card {
+  padding: 1vw;
+  border: solid black 1px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 300px;
+  width: 25%;
+  margin: 1rem;
+}
+.card:hover {
+  transform: scale(1.0125, 1.0125);
+  cursor: pointer;
+}
+.card img {
+  width: 100%;
+}
+
+.addCart {
+  color: white;
+  background-color: black;
+  border: solid black;
+  border-radius: 10px;
+  width: 10vw;
+  height: 2vw;
+}
+.addCart:hover {
+  transform: scale(1.05, 1.05);
+  background-color: rgb(66, 66, 66);
+  border: solid rgb(66, 66, 66);
+  cursor: pointer;
+}
+
+/*shoes*/
+.flex-wrapper-shoes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 2vw;
+}
+
+/*Jerseys*/
+
+.flex-wrapper-jerseys{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 2vw;
+}
+
+/*balls*/
+.flex-wrapper-balls{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 2vw;
+}
+
+
+/*Shopping Cart*/
+.container-shopCart{
+  display: grid;
+  grid-template-columns: 1fr 30%;
+}
+.flexbox-product{
+  display: grid;
+  grid-template-columns: 20% 40% 10% 1fr;
+  flex: 2 1 auto;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  padding: .5rem;
+  background-color: hsl(0, 0%, 100%);
+}
+.flexbox-product:not(:last-child){
+  border-bottom: solid black 2px;
+}
+.flexbox-product input{
+  width: 50%;
+}
+.products{
+  margin: 2rem;
+  border: solid black 2px;
+}
+.products img{
+  width: 100%;
+  max-width: 150px;
+}
+
+.info{
+  margin: 2rem;
+  border: solid black 2px;
+  padding: .5rem;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.info-products{
+  line-height: 1rem;
+  padding: 1rem;
+  border: solid black 2px;
+}
+.info-price{
+  border: 2px solid black;
+  padding: 1rem;
+
+}
+/*footer*/
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  position: absolute;
+  width: 94.8%;
+  background: hsl(0, 0%, 74%);
+  color: black;
+  padding: 2rem;  
+  border-top: solid hsl(0, 0%, 0%) 2px;
+  text-align: center;
+}
+
+footer p{
+  font-size: small;
+}
+#footer-shopCart{
+  bottom: 0;
+}
