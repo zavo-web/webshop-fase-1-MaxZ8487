@@ -61,31 +61,28 @@ header {
 .flexbox-sidebar{
   display: flex;
   flex-direction: column;
-  gap: 1vw;
   background-color: hsl(0, 0%, 63%);
   height: 100%;
   color: black;
   text-align: center;
-  padding: 1vw;
-  padding-left: 1.5vw;
-  padding-right: 1.5vw;
   border-right: solid black 2px;
 }
 .categorieLink a{
   text-decoration: none;
   color: black;
 }
+.categorieLink:last-child{
+  border-bottom: solid black 1px;
+}
 .link-button{
   background-color: hsl(0, 0%, 70%);
-  border: solid black;
-  border-radius: 10px;
+  border-top: solid black 1px;
   height: 3.5em; 
   align-content: center;
   width: 100%;
 }
 .link-button:hover{  
   background-color: hsl(0, 0%, 75%);
-  transform: scale(1.05, 1.05);
   cursor: pointer;
 }
 
@@ -97,6 +94,9 @@ header {
 #about{
   line-height: 2rem;
   font-size: 2ch;
+}
+#about img{
+  border-radius: 15px;
 }
 /*Products*/
 #products {
@@ -201,6 +201,17 @@ header {
   background-color: hsl(0, 0%, 100%);
   display: flex;
   flex-direction: column;
+  gap: 3rem;
+}
+.info-products{
+  line-height: 1rem;
+  padding: 1rem;
+  border: solid black 2px;
+}
+.info-price{
+  border: 2px solid black;
+  padding: 1rem;
+
 }
 /*footer*/
 footer{
@@ -218,4 +229,7 @@ footer{
 
 footer p{
   font-size: small;
+}
+#footer-shopCart{
+  bottom: 0;
 }
